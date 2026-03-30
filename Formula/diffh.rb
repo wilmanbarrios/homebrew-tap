@@ -5,21 +5,21 @@
 class Diffh < Formula
   desc "Human-readable time differences (port of Carbon diffForHumans)"
   homepage "https://github.com/wilmanbarrios/wdxtools"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/diffh_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a0061e5dfdf1ac7e8083fd109702f84ac9acbe3c99dca5deeb6e7f540671ea27"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.0/diffh_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fc8f0b0a68e9786e78df6d0872a6e95e68ba5b0d4f5320e9f1be3134ce9b71bc"
 
       define_method(:install) do
         bin.install "diffh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/diffh_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2ed657183c213f0f94a8b5bb7609bf4be18d708bfce9edcf38067dfd07c1d13e"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.0/diffh_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a9ee062da9886e6667eba60618e47010eb746fffb0e302a72096f7a0a8408f2c"
 
       define_method(:install) do
         bin.install "diffh"
@@ -29,15 +29,15 @@ class Diffh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/diffh_0.2.0_linux_amd64.tar.gz"
-      sha256 "c6eb411d24fd689e8988a298ea0730b03804c11e83508b01eb4ce610f70270da"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.0/diffh_0.3.0_linux_amd64.tar.gz"
+      sha256 "a66e39e17a61db17df1fcd2f69547a287d503a6ab0b4d66b386ffa07c58e0be5"
       define_method(:install) do
         bin.install "diffh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/diffh_0.2.0_linux_arm64.tar.gz"
-      sha256 "7b02b81a518e09955af3cbdebdc85f6d33a6949534bc5c15e29cd59b08e78d2d"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.0/diffh_0.3.0_linux_arm64.tar.gz"
+      sha256 "5030ad6dfd9b78e0d7eacf898060549f19a1ef7b0eb74e2ee5b1dac718600604"
       define_method(:install) do
         bin.install "diffh"
       end
