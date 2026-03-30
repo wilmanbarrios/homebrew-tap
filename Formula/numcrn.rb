@@ -5,21 +5,21 @@
 class Numcrn < Formula
   desc "Abbreviate numbers for humans (port of Laravel Number::abbreviate)"
   homepage "https://github.com/wilmanbarrios/wdxtools"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.1.1/numcrn_0.1.1_darwin_amd64.tar.gz"
-      sha256 "306670423a9b595d5e621cfec66769f7dde56eaab32d231c95056fb4ae1c0a43"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/numcrn_0.2.0_darwin_amd64.tar.gz"
+      sha256 "26b179d17a74145d0905ca2e9f489c741e3c97d57cca53a7a2bb27be13eae7d1"
 
       define_method(:install) do
         bin.install "numcrn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.1.1/numcrn_0.1.1_darwin_arm64.tar.gz"
-      sha256 "da3d6338a094cc3f32c1f01683c67634010100dca2930c0da09673dbe40ad72b"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/numcrn_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d08c04ba11af776aebbc6d5f0021f6b736d9a98f7459223985beb0bb1024b86d"
 
       define_method(:install) do
         bin.install "numcrn"
@@ -29,15 +29,15 @@ class Numcrn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.1.1/numcrn_0.1.1_linux_amd64.tar.gz"
-      sha256 "925cefc38d3cce449c950d43f347dbda60de75e8f67283cc7c5118e7eceee953"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/numcrn_0.2.0_linux_amd64.tar.gz"
+      sha256 "cc6bed5e10d9b132750f8f20dc292459289161dd30f00a79a551618c83be019e"
       define_method(:install) do
         bin.install "numcrn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.1.1/numcrn_0.1.1_linux_arm64.tar.gz"
-      sha256 "e8b063cc05cd4b22a56000d03dd31ce13bb652d7e4dc0405889560a5d9900e2d"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.2.0/numcrn_0.2.0_linux_arm64.tar.gz"
+      sha256 "1c65e841860dde5d4a4737d26ed55414a48ba8c3cd726424cc1d4aed3262a0c0"
       define_method(:install) do
         bin.install "numcrn"
       end
