@@ -5,13 +5,13 @@
 class Wdxtools < Formula
   desc "Everyday formatting tools for the command line"
   homepage "https://github.com/wilmanbarrios/wdxtools"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.2/wdxtools_0.3.2_darwin_amd64.tar.gz"
-      sha256 "461655998fb082c2882af7c3d97ff9ea37e46abd0c426bcf04ff7bda4aeb1437"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.3/wdxtools_0.3.3_darwin_amd64.tar.gz"
+      sha256 "0c899e7f6728c748854ba2bf4d975205589c472f5885e3dfa900dd7a854745f8"
 
       define_method(:install) do
         bin.install "wdxtools"
@@ -20,8 +20,8 @@ class Wdxtools < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.2/wdxtools_0.3.2_darwin_arm64.tar.gz"
-      sha256 "e8fba08406151c8109a1deef7bf2f21fd875997bfd0a7b731823bfd91d0bb006"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.3/wdxtools_0.3.3_darwin_arm64.tar.gz"
+      sha256 "050f8771267860477905104d5c00f639bd9c15a31a572555db08597bf06ea6bb"
 
       define_method(:install) do
         bin.install "wdxtools"
@@ -33,8 +33,8 @@ class Wdxtools < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.2/wdxtools_0.3.2_linux_amd64.tar.gz"
-      sha256 "c4d9c43b937819e688ea2344c0f989fe35f4ef6b33b6a46271fc6edc7c7e3225"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.3/wdxtools_0.3.3_linux_amd64.tar.gz"
+      sha256 "ec5fec9b52bfbdb8fb0d1bbc417ffd487306a2d21f389b594323781029aa7adc"
       define_method(:install) do
         bin.install "wdxtools"
         bin.install_symlink "wdxtools" => "diffh"
@@ -42,8 +42,8 @@ class Wdxtools < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.2/wdxtools_0.3.2_linux_arm64.tar.gz"
-      sha256 "bcaf55380b351798942c3918ab937a858168045d47f92796c13cb293fd5b2e8f"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.3.3/wdxtools_0.3.3_linux_arm64.tar.gz"
+      sha256 "5f9334c01be6e7cd6a21b3b304284c49b9c05503a6511d44a16a9a4922e0f3eb"
       define_method(:install) do
         bin.install "wdxtools"
         bin.install_symlink "wdxtools" => "diffh"
