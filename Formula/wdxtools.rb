@@ -1,25 +1,25 @@
 class Wdxtools < Formula
   desc "Everyday formatting tools for the command line"
   homepage "https://github.com/wilmanbarrios/wdxtools"
-  version "0.4.0"
+  version "0.4.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.0/wdxtools-aarch64-apple-darwin.tar.xz"
-      sha256 "b1d8044906913211689f9476db8127fd22b8ba1defdc0fe0521eb6e5388dfd80"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.2/wdxtools-aarch64-apple-darwin.tar.xz"
+      sha256 "010783019297ad4f970e7a9e8f7b664afc6b66fb0b44d1325e3d36ba34203968"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.0/wdxtools-x86_64-apple-darwin.tar.xz"
-      sha256 "177400e7a683963987014327ab0973a43457b685adebd08c1d76609968705029"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.2/wdxtools-x86_64-apple-darwin.tar.xz"
+      sha256 "56214a65d22fd404ca66886c71d251c9f10e174c9d609b1b650106e2a5b663db"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.0/wdxtools-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0e2961afc364ac354a7467f8670de6cce1b6f0b03ae7da8aadaa7c06b7fdde94"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.2/wdxtools-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9e115dd845655b997bd7073c700de5f26e106939ada6a0e459d8f4fed4aea189"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.0/wdxtools-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "19663ed18b42e0e12494004096c55abea1bdafc0867948abc19af73365255ccd"
+      url "https://github.com/wilmanbarrios/wdxtools/releases/download/v0.4.2/wdxtools-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "165b0b4c447951da3463f016e2b9e3bbf6491a69bc61e6dfad529a2c6981124b"
     end
   end
   license "MIT"
